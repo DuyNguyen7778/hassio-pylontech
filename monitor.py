@@ -73,6 +73,7 @@ def serial_command(device, command, *, retries=1, checkframe=True):
 
 def get_power(device):
     response = serial_command(device, "pwr")
+    print("Raw response:\n", repr(response))  # <-- thêm dòng này để debug
     try:
         lines = response.split("\n")
 
