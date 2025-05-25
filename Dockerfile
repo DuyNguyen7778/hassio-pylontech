@@ -5,9 +5,8 @@ ENV LANG C.UTF-8
 
 RUN apk add --no-cache \
     python3 \
-    py3-pip \
-    jq \
- && pip3 install --no-cache-dir --root-user-action=ignore paho-mqtt
+    py3-paho-mqtt \
+    jq
 
 COPY run.sh monitor.py /
 
