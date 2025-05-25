@@ -4,5 +4,5 @@
     "mqtt_pass": "<password>",
     "mqtt_client_id": "pylon0",
     "mqtt_topic": "power/pylon",
-    "device": "/dev/ttyUSB0"
+    "device": "/dev/ttyACM1"
 }
